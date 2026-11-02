@@ -1,0 +1,33 @@
+{
+  "required": true,
+  "package": "net.aste.just_scale_it.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "pocket.EnergyStorageMixin",
+    "pocket.PocketCapabilityMixin",
+    "pocket.PocketBlockEntityMixin",
+    "pocket.PocketKineticNetworkMixin",
+    "pocket.PocketTickMixin",
+    "pocket.PocketStressTooltipMixin",
+    "pocket.PocketGeneratorTooltipMixin",
+    "pocket.PocketAlternatorTooltipMixin",
+    "pocket.PocketMotorTooltipMixin",
+    "pocket.PocketConnectorMixin",
+    "pocket.PocketFluidTankMixin",
+    "pocket.PocketCombinedTankMixin",
+    "pocket.PocketPlacementCostMixin",
+    "pocket.PocketResizeCostMixin",
+    "pocket.PocketSchematicExportMixin",
+    "pocket.PocketSchematicContextMixin",
+    "pocket.PocketSchematicTemplateMixin",
+    "pocket.PocketSchematicLevelMixin",
+    "pocket.PocketSchematicItemMixin",
+    "pocket.PocketSchematicPlaceMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.PocketSchematicRendererMixin"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "just_scale_it.cost.missing": "Shrinking requires an additional %s × %s (keep it separate from the placement stack).",
+  "just_scale_it.cost.bad_item": "Unknown shrink resource in config: %s.",
+  "just_scale_it.cost.shortage": "Not enough resources to shrink this structure.",
+  "just_scale_it.cost.no_context": "This placement method does not support shrink payments.",
+  "just_scale_it.cost.no_player": "Paid shrinking requires a player carrying resources.",
+  "just_scale_it.schematic.partial": "Some schematic scales or glue bonds could not be restored. See the log for details."
+}

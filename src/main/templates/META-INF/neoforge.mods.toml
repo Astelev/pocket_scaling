@@ -38,14 +38,14 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="pocket"
 type="required"
-versionRange="[0.24.1,0.25)"
+versionRange="[0.32.0,0.33)"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="pym"
 type="required"
-versionRange="[0.5.1,0.6)"
+versionRange="[0.7.1,0.8)"
 ordering="AFTER"
 side="BOTH"
 

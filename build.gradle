@@ -150,11 +150,11 @@ def unpackPocketPym=tasks.register('unpackPocketPym',Copy) {
     into pymCompileDir
 }
 dependencies {
-    pocketMod "maven.modrinth:create-pocket-sized:0.24.1"
+    pocketMod "maven.modrinth:create-pocket-sized:0.32.0"
     createMod "maven.modrinth:LNytGWDc:UjX6dr61"
     pocketSable "maven.modrinth:T9PomCSv:fg9dTRz9"
-    pocketPym files(pymCompileDir.map { it.file("com.misterblusky9.pym.pym-0.5.1.jar") }).builtBy(unpackPocketPym)
-    pocketAddition "maven.modrinth:kU1G12Nn:qPr8V4G2" // bytecode verification only; not packaged
+    pocketPym files(pymCompileDir.map { it.file("com.misterblusky9.pym.pym-0.7.1.jar") }).builtBy(unpackPocketPym)
+    pocketAddition "maven.modrinth:kU1G12Nn:1.7.2" // bytecode verification only; not packaged
     compileOnly files(fileTree(pocketCompileDir) { include '*.jar' }).builtBy(unpackPocketSable)
 
     testImplementation "org.ow2.asm:asm-tree:9.8"

@@ -8,10 +8,6 @@ public final class DistributionTest {
         try(var jar=new JarFile(args[0])){
             if(jar.getJarEntry("just_scale_it.mixins.json")==null)throw new AssertionError("Missing mixin config");
             if(jar.getJarEntry("META-INF/neoforge.mods.toml")==null)throw new AssertionError("Missing metadata");
-            var config = com.google.gson.JsonParser.parseString(new String(
-                    jar.getInputStream(jar.getJarEntry("just_scale_it.mixins.json")).readAllBytes(),
-                    StandardCharsets.UTF_8)).getAsJsonObject();
-            String prefix = config.get("package").getAsString().replace('.', '/') + "/";
             var configEntry=jar.getJarEntry("just_scale_it.mixins.json");
             var config=JsonParser.parseString(new String(jar.getInputStream(configEntry).readAllBytes(),StandardCharsets.UTF_8)).getAsJsonObject();
             String prefix=config.get("package").getAsString().replace('.', '/')+"/";
